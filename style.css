@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+@media  only screen and (max-width: 1200px){
+    html{
+    font-size: 50%;
+    }
+}
+@media  only screen and (max-width: 900px){
+    html{
+    font-size: 40%;
+    }
+}
+@media  only screen and (max-width: 600px){
+    html{
+    font-size: 30%;
+    }
+}
+@media  only screen and (max-width: 500px){
+    html{
+    font-size: 20%;
+    }
+}
+.st0 {
+    fill: url(#XMLID_92_);
+}
+
+.st1 {
+    opacity: 0.51;
+    fill: #FFFFFF;
+}
+
+.st2 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+}
+
+.st3 {
+    display: none;
+    fill: url(#XMLID_93_);
+}
+
+.st4 {
+    opacity: 0.45;
+    fill: #FFFFFF;
+}
+
+.st5 {
+    fill: #EDECD1;
+}
+
+.st6 {
+    fill: #EA1313;
+}
+
+.st7 {
+    fill: #333333;
+}
+
+.st8 {
+    font-family: 'MyriadPro-Regular';
+}
+
+.st9 {
+    font-size: 5.5937px;
+}
+
+.st10 {
+    fill: url(#XMLID_94_);
+}
+
+.st11 {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+svg {
+    width:40%;
+    height: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+@media  only screen and (max-width: 600px){
+    svg{
+    margin-top: 4rem;
+    }
+}
+h1 {
+    text-align: center;
+  font-size: 4rem;
+    margin-top: 4rem;
+}
+
+.wings {
+    transform-origin: 404px 237px;
+    animation: rounds 120s infinite;
+}
+
+@keyframes rounds {
+    50% {
+        transform: rotate(36000deg);
+    }
+    95% {
+        transform: rotate(36000deg);
+
+    }
+}
+
+.btn-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+@media  only screen and (max-width: 600px){
+    .btn-group{
+    margin-top: 4rem;
+    }
+}
+.btn-start,
+.btn-stop {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    letter-spacing: .4rem;
+    color: white;
+    padding: 10px;
+    font-weight: 400;
+    background: #004D40;
+    border-radius: 300px;
+    margin: 0 20px;
+    width: 20rem;
+    z-index: 20;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.btn-start::after,
+.btn-stop::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    border: #212121 2px solid;
+    border-radius: 300px;
+    z-index: 10;
+}
+
+.btn-start:hover,
+.btn-stop:hover {
+    cursor: pointer;
+}
+
+.btn-start:active,
+.btn-stop:active{
+    transform: scale(0.9);
+}
+body{
+    background-image: linear-gradient(to bottom right,#ed5c5c,#f0f48d);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
